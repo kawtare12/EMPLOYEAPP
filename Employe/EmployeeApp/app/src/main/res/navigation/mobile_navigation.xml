@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/employeeFragment">
+
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.mourid.employeeapp.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.mourid.employeeapp.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/employeeFragment"
+        android:name="com.mourid.employeeapp.ui.employee.EmployeeFragment"
+        android:label="Employee"
+        tools:layout="@layout/fragment_employee" />
+    <fragment
+        android:id="@+id/serviceFragment"
+        android:name="com.mourid.employeeapp.ui.service.ServiceFragment"
+        android:label="Service"
+        tools:layout="@layout/fragment_service" />
+</navigation>
